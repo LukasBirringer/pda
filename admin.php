@@ -24,19 +24,15 @@ function uploadFile(){
 	var file = _("file1").files[0];
 	var projektname = _("projekt-name").value;
 	var erlaubtefirma =_("projekt-erlaubte-firma").value;
-	
-
 
 	//alert(erlaubtefirma);
 	// alert(file.name+" | "+file.size+" | "+file.type);
 
 	var formdata = new FormData();
-
 	
 	formdata.append("file1", file);
 	formdata.append("projektname", projektname);
 	formdata.append("erlaubtefirma", erlaubtefirma);
-
 	
 	var ajax = new XMLHttpRequest();
 	ajax.upload.addEventListener("progress", progressHandler, false);
