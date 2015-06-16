@@ -12,9 +12,9 @@ sec_session_start();
 		<link rel="stylesheet" href="css/admin.css"><script src="js/jquery.js"></script>
   <title>Patrona Download-Plattform</title>  
 	</head>
-
 <body>
 <script>
+/* test git */
 /* Script written by Adam Khoury @ DevelopPHP.com */
 /* Video Tutorial: http://www.youtube.com/watch?v=EraNFJiY0Eg */
 function _(el){
