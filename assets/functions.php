@@ -8,7 +8,7 @@ function sec_session_start(){
 	$httponly = true;
 
 	if (ini_set('session.use_only_cookies', 1) === FALSE) {
-		header("Location: ../error.php?err=Could initiate a safe session (ini_set)");
+		header("Location: ../index.php?err=Could initiate a safe session (ini_set)");
 		exit();
 	}
 

@@ -3,6 +3,13 @@ include_once 'assets/db_connect.php';
 include_once 'assets/functions.php';
  
 sec_session_start();
+
+if (login_check($mysqli) == true) {
+	$logged = 'in';
+} else {
+	header('Location: index.php?error=');
+}
+
 ?>
 
 <!DOCTYPE html>
