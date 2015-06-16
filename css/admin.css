@@ -1,0 +1,309 @@
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@media (min-width: 30em) {
+  .row {
+    width: 100%;
+    display: table;
+    table-layout: fixed; }
+
+  .col {
+    display: table-cell; } }
+
+
+.fix-width {
+  width: 1000px;
+  margin: 0 auto; }
+
+* {
+  margin: 0;
+  padding: 0; 
+  outline: none;}
+
+body {
+  background: #efefef;
+  font-family: "Lato"; }
+
+.top-bar {
+  background: #d31a2b;
+  width: 100%;
+  height: 80px;
+  color: #ffffff;
+  font-weight: 200; }
+  .top-bar .logo {
+    height: 50px;
+    margin-top: 15px; }
+  .top-bar .welcome {
+    float: right;
+    line-height: 80px;
+    font-size: 14px;
+    margin-right: 15px; }
+
+.top-bar button {
+  float: right;
+  margin-top: 25px;
+  display: inline-block;
+  height: 30px;
+  font-weight: 200;
+  padding: 0 30px;
+  color: #ffffff;
+  line-height: 30px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  box-sizing: border-box; }
+  button:hover {
+    background: #ffffff;
+    color: #d31a2b; }
+
+.dlall {
+  color: #333333;
+  border: 1px solid #333333; }
+
+.sectionhead {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #eee;
+  color: #333333;
+  background: #ffffff; }
+  .sectionhead h1 {
+    font-size: 24px;
+    line-height: 80px;
+    font-weight: 200; float: left;}
+
+.breadcrumb {
+  margin: 15px;
+  font-weight: 200; }
+
+table {
+  background: #ffffff;
+  border: 1px solid #eee;
+  border-collapse: collapse; }
+
+th {
+  text-align: left;
+  padding: 30px;
+  font-weight: 400;
+  background: #fafafa; }
+
+td {
+  text-align: left;
+  padding: 15px 30px;
+  font-weight: 200; }
+
+.border {
+  background: #fff;
+  border-bottom: 1px solid #eee; }
+
+/*# sourceMappingURL=main.css.map */
+.box {
+  width: 300px;
+  float: left;
+  color: #fff;
+  background: #fff;
+  background-size: 300px 180px;
+  margin-top: 30px;
+  border-radius: 3px;
+}
+.box:hover:not(:last-child) {
+  box-shadow: 0 0 10px 1px #ccc;
+}
+.p-info {
+  font-size: 16px;
+  padding: 10px 0 0 20px;
+  text-align: left;
+  font-weight: 200;
+  text-shadow: 0 0 5px 1px #000;
+  color: #444;
+}
+div.box:last-child{
+  height: 150px;
+  font-size: 20px;
+  text-align: center;
+  background: #ddd;
+}
+div.box:last-child:hover {
+  cursor: pointer;
+  background: #bbb;
+}
+.np p {
+  margin-top: 60px;
+}
+.p-logo {
+  width: 300px;
+  height: 120px;
+}
+.p-logo img {
+  width: 292px;
+  height: 116px;
+  margin: 4px;
+}
+div.box:not(:nth-child(3n+1)) {
+    margin-left: 50px;
+}
+.boxoverlay {
+  width: 300px;
+  height: 180px;
+  position: absolute;
+  display: none;
+  border-radius: 5px;
+}
+.p-info button {
+  display: inline-block;
+  height: 30px;
+  font-weight: 200;
+  padding: 0 30px;
+  color: #aaa;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box; 
+  width: 120px;
+  margin: 15px 0;
+  float: left;
+  text-align: center;
+}
+.p-info button:hover, .delete-modal button:hover{
+  color: #444;
+  background: #ddd;
+}
+button.delete-btn {
+  margin-left: 20px;
+}
+.a-info {
+  font-size: 12px;
+  margin-top: 3px;
+}
+.newproject, #delete-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.8);
+  top:0;
+  left: 0;
+}
+.np-modal {
+  background-color: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.np-modal form{
+  margin: 30px;
+  width: 340px;
+  height: 440px;
+}
+.np-modal h3 {
+  font-size: 24px;
+  font-weight: 200;
+}
+.np-modal label {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 200;
+margin-top: 20px;}
+.np-modal input[type="text"], select {
+  margin-top: 10px;
+  height: 30px;
+  width: 100%;
+  max-width: 340px;
+  padding-left: 10px;
+    box-sizing: border-box;
+}
+progress {
+  width: 340px;
+  height: 10px;
+  margin: 20px auto;
+  display: block;
+  /* Important Thing */
+  -webkit-appearance: none;
+  border: none;
+}
+
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+  border-radius: 50px;
+  background:
+    -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+    -webkit-linear-gradient(left, #d31a2b, #d31a2b);
+  
+  /* Looks great, now animating it */
+  background-size: 25px 14px, 100% 100%, 100% 100%;
+  -webkit-animation: move 5s linear 0 infinite;
+}
+
+/* That's it! Now let's try creating a new stripe pattern and animate it using animation and keyframes properties  */
+
+@-webkit-keyframes move {
+  0% {background-position: 0px 0px, 0 0, 0 0}
+  100% {background-position: -100px 0px, 0 0, 0 0}
+}
+
+/* Prefix-free was creating issues with the animation */
+#status {
+  font-size: 14px;
+  font-weight: 200;
+}
+#loaded_n_total{
+  font-size: 14px;
+  font-weight: 200;
+}
+.np-modal-close{
+  position: absolute;
+  margin-left: 370px;
+  margin-top: 10px;
+  color: #444;
+  text-decoration: none;
+  font-size: 20px;
+}
+.delete-modal {
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  height: 160px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #444;
+}
+.delete-modal h2 {
+  font-weight: 200;
+  font-size: 20px;
+  padding: 30px;
+}
+.delete-modal button {
+  display: inline-block;
+  height: 30px;
+  font-weight: 200;
+  padding: 0 30px;
+  color: #aaa;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box; 
+  width: 120px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  float: left;
+}

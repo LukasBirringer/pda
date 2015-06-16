@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+  background: url(../img/7788.png);
+  background-size:cover;
+  font-family: "Lato"; 
+text-align: center;}
+div.login {
+	color: #fff;
+  margin: 10% auto;
+  width: 400px;
+  height: 90%;
+}
+div#title {
+  font-size: 24px;
+  font-weight: 200;
+  margin: 35px;
+}
+div#top img {
+  margin-top: 10px;
+  width: 200px;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255,255,255,1) inset;
+}
+input:-webkit-autofill, input::-webkit-autofill:focus, :focus, input::focus:-webkit-autofill, input:-webkit-autofill:focus,  input:focus:-webkit-autofill  {
+
+	-webkit-box-shadow: inset 0 0px 1000px #fafafa  !important;
+
+}
+textarea, input { outline: none; }
+.user, .pass {
+  width: 400px;
+  height: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+}
+.button {
+	width: 420px;
+	height: 50px;
+	margin-top: 20px;
+  padding: 20px;
+  font-size: 24px;
+}
+input[type="text"].focus {
+  -webkit-appearance:none ;
+}
